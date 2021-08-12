@@ -4,3 +4,12 @@
 {"level":"INFO","time":"2021-08-12T18:26:00.306+0800","caller":"bluebell/main.go:74","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2021-08-12T18:26:02.437+0800","caller":"bluebell/main.go:83","msg":"Server exiting"}
 {"level":"DEBUG","time":"2021-08-12T18:47:07.875+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-08-12T18:48:59.629+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-08-12T20:22:22.617+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2021-08-12T20:22:47.307+0800","caller":"logger/logger.go:70","msg":"/version","status":200,"method":"GET","path":"/version","query":"","ip":"::1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36","errors":"","cost":0.000033736}
+{"level":"INFO","time":"2021-08-12T20:22:50.130+0800","caller":"bluebell/main.go:74","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-08-12T20:22:53.289+0800","caller":"bluebell/main.go:83","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-08-12T20:22:54.868+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2021-08-12T20:23:00.595+0800","caller":"logger/logger.go:70","msg":"/version","status":200,"method":"GET","path":"/version","query":"","ip":"::1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36","errors":"","cost":0.000113589}
+{"level":"DEBUG","time":"2021-08-12T20:23:10.071+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2021-08-12T20:23:10.509+0800","caller":"logger/logger.go:70","msg":"/version","status":200,"method":"GET","path":"/version","query":"","ip":"::1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36","errors":"","cost":0.000061188}
