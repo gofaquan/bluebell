@@ -16,3 +16,4 @@
 {"level":"DEBUG","time":"2021-08-12T20:37:32.157+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
 {"level":"INFO","time":"2021-08-12T20:37:34.034+0800","caller":"bluebell/main.go:74","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2021-08-12T20:37:34.036+0800","caller":"bluebell/main.go:83","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-08-12T21:47:01.628+0800","caller":"bluebell/main.go:38","msg":"logger init success..."}

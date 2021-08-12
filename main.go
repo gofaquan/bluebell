@@ -12,6 +12,7 @@ import (
 	"web_app/dao/mysql"
 	"web_app/dao/redis"
 	"web_app/logger"
+	"web_app/pkg/snowflake"
 	"web_app/routes"
 	"web_app/settings"
 
@@ -47,6 +48,12 @@ func main() {
 		return
 	}
 	defer redis.Close()
+
+	if err := snowflake.Init(settings.Conf.StartTime, settings.Conf.MachineId); err != nil {
+		fmt.Printf("init snowflake failed,err:%v\n", err)
+		return
+	}
+
 	// 5. 注册路由
 	r := routes.Setup(settings.Conf.Mode)
 	// 6. 启动服务（优雅关机）
