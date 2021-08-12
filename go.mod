@@ -8,9 +8,12 @@ require (
 	github.com/go-redis/redis v6.15.8+incompatible
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/jmoiron/sqlx v1.2.0
+	github.com/mattn/go-isatty v0.0.13 // indirect
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/onsi/ginkgo v1.13.0 // indirect
+	github.com/pelletier/go-toml v1.9.3 // indirect
 	github.com/spf13/viper v1.7.0
 	go.uber.org/zap v1.10.0
+	golang.org/x/sys v0.0.0-20210809222454-d867a43fc93e // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
 )
