@@ -1,8 +1,8 @@
-name: "web_app"
+name: "bluebell"
 mode: "dev"
-port: 8080
-version: "v0.1.5"
-start_time: "2021-08-12"
+port: 8081
+version: "v0.0.1"
+start_time: "2020-07-01"
 machine_id: 1
 
 log:
@@ -16,7 +16,7 @@ mysql:
   port: 3306
   user: "root"
   password: "123456"
-  dbname: "admin"
+  dbname: "bluebell"
   max_open_conns: 200
   max_idle_conns: 50
 redis:
