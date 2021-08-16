@@ -30,7 +30,7 @@ func SetupRouter(mode string) *gin.Engine {
 
 	v1 := r.Group("/api/v1")
 	// 根据时间或分数获取帖子列表
-	//v1.GET("/posts2", controller.GetPostListHandler2)
+	v1.GET("/posts2", controller.GetPostListHandler2)
 	v1.GET("/posts", controller.GetPostListHandler)
 	v1.GET("/community", controller.CommunityHandler)
 	v1.GET("/community/:id", controller.CommunityDetailHandler)
@@ -42,7 +42,7 @@ func SetupRouter(mode string) *gin.Engine {
 		v1.POST("/post", controller.CreatePostHandler)
 		//
 		//	// 投票
-		//	v1.POST("/vote", controller.PostVoteController)
+		v1.POST("/vote", controller.PostVoteController)
 	}
 	//
 

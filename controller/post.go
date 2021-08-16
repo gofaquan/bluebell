@@ -75,45 +75,44 @@ func GetPostListHandler(c *gin.Context) {
 	// 返回响应
 }
 
-//
-//// GetPostListHandler2 升级版帖子列表接口
-//// @Summary 升级版帖子列表接口
-//// @Description 可按社区按时间或分数排序查询帖子列表接口
-//// @Tags 帖子相关接口(api分组展示使用的)
-//// @Accept application/json
-//// @Produce application/json
-//// @Param Authorization header string true "Bearer JWT"
-//// @Param object query models.ParamPostList false "查询参数"
-//// @Security ApiKeyAuth
-//// @Success 200 {object} _ResponsePostList
-//// @Router /posts2 [get]
-//func GetPostListHandler2(c *gin.Context) {
-//	// GET请求参数(query string)：/api/v1/posts2?page=1&size=10&order=time
-//	// 初始化结构体时指定初始参数
-//	p := &models.ParamPostList{
-//		Page:  1,
-//		Size:  10,
-//		Order: models.OrderTime, // magic string
-//	}
-//	//c.ShouldBind()  根据请求的数据类型选择相应的方法去获取数据
-//	//c.ShouldBindJSON() 如果请求中携带的是json格式的数据，才能用这个方法获取到数据
-//	if err := c.ShouldBindQuery(p); err != nil {
-//		zap.L().Error("GetPostListHandler2 with invalid params", zap.Error(err))
-//		ResponseError(c, CodeInvalidParam)
-//		return
-//	}
-//	data, err := logic.GetPostListNew(p) // 更新：合二为一
-//	// 获取数据
-//	if err != nil {
-//		zap.L().Error("logic.GetPostList() failed", zap.Error(err))
-//		ResponseError(c, CodeServerBusy)
-//		return
-//	}
-//	ResponseSuccess(c, data)
-//	// 返回响应
-//}
+// GetPostListHandler2 升级版帖子列表接口
+// @Summary 升级版帖子列表接口
+// @Description 可按社区按时间或分数排序查询帖子列表接口
+// @Tags 帖子相关接口(api分组展示使用的)
+// @Accept application/json
+// @Produce application/json
+// @Param Authorization header string true "Bearer JWT"
+// @Param object query models.ParamPostList false "查询参数"
+// @Security ApiKeyAuth
+// @Success 200 {object} _ResponsePostList
+// @Router /posts2 [get]
+func GetPostListHandler2(c *gin.Context) {
+	// GET请求参数(query string)：/api/v1/posts2?page=1&size=10&order=time
+	// 初始化结构体时指定初始参数
+	p := &models.ParamPostList{
+		Page:  1,
+		Size:  10,
+		Order: models.OrderTime, // magic string
+	}
+	//c.ShouldBind()  根据请求的数据类型选择相应的方法去获取数据
+	//c.ShouldBindJSON() 如果请求中携带的是json格式的数据，才能用这个方法获取到数据
+	if err := c.ShouldBindQuery(p); err != nil {
+		zap.L().Error("GetPostListHandler2 with invalid params", zap.Error(err))
+		ResponseError(c, CodeInvalidParam)
+		return
+	}
+	data, err := logic.GetPostListNew(p) // 更新：合二为一
+	// 获取数据
+	if err != nil {
+		zap.L().Error("logic.GetPostList() failed", zap.Error(err))
+		ResponseError(c, CodeServerBusy)
+		return
+	}
+	ResponseSuccess(c, data)
+	// 返回响应
+}
 
-// 根据社区去查询帖子列表
+////根据社区去查询帖子列表
 //func GetCommunityPostListHandler(c *gin.Context) {
 //	// 初始化结构体时指定初始参数
 //	p := &models.ParamCommunityPostList{
